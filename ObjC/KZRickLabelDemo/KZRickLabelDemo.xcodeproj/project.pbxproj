@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		84A2929C1A36F5DC00EF8787 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A2929B1A36F5DC00EF8787 /* main.m */; };
+		84A2929F1A36F5DC00EF8787 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A2929E1A36F5DC00EF8787 /* AppDelegate.m */; };
+		84A292A21A36F5DC00EF8787 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A292A11A36F5DC00EF8787 /* ViewController.m */; };
+		84A292A51A36F5DC00EF8787 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84A292A31A36F5DC00EF8787 /* Main.storyboard */; };
+		84A292A71A36F5DC00EF8787 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84A292A61A36F5DC00EF8787 /* Images.xcassets */; };
+		84A292AA1A36F5DC00EF8787 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A292A81A36F5DC00EF8787 /* LaunchScreen.xib */; };
+		84A292B61A36F5DD00EF8787 /* KZRickLabelDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A292B51A36F5DD00EF8787 /* KZRickLabelDemoTests.m */; };
+		84A292C41A36F65200EF8787 /* KZLinkLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A292C11A36F65200EF8787 /* KZLinkLabel.m */; };
+		84A292C51A36F65200EF8787 /* NSAttributedString+Emotion.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A292C31A36F65200EF8787 /* NSAttributedString+Emotion.m */; };
+		84A292EA1A36FC6800EF8787 /* [不服].png in Resources */ = {isa = PBXBuildFile; fileRef = 84A292C71A36FC6800EF8787 /* [不服].png */; };
+		84A292EB1A36FC6800EF8787 /* [亲亲].png in Resources */ = {isa = PBXBuildFile; fileRef = 84A292C81A36FC6800EF8787 /* [亲亲].png */; };
+		84A292EC1A36FC6800EF8787 /* [偷笑].png in Resources */ = {isa = PBXBuildFile; fileRef = 84A292C91A36FC6800EF8787 /* [偷笑].png */; };
+		84A292ED1A36FC6800EF8787 /* [加油].png in Resources */ = {isa = PBXBuildFile; fileRef = 84A292CA1A36FC6800EF8787 /* [加油].png */; };
+		84A292EE1A36FC6800EF8787 /* [卖萌].png in Resources */ = {isa = PBXBuildFile; fileRef = 84A292CB1A36FC6800EF8787 /* [卖萌].png */; };
+		84A292EF1A36FC6800EF8787 /* [吐了].png in Resources */ = {isa = PBXBuildFile; fileRef = 84A292CC1A36FC6800EF8787 /* [吐了].png */; };
+		84A292F01A36FC6800EF8787 /* [大哭].png in Resources */ = {isa = PBXBuildFile; fileRef = 84A292CD1A36FC6800EF8787 /* [大哭].png */; };
+		84A292F11A36FC6800EF8787 /* [大笑].png in Resources */ = {isa = PBXBuildFile; fileRef = 84A292CE1A36FC6800EF8787 /* [大笑].png */; };
+		84A292F21A36FC6800EF8787 /* [好色].png in Resources */ = {isa = PBXBuildFile; fileRef = 84A292CF1A36FC6800EF8787 /* [好色].png */; };
+		84A292F31A36FC6800EF8787 /* [害羞].png in Resources */ = {isa = PBXBuildFile; fileRef = 84A292D01A36FC6800EF8787 /* [害羞].png */; };
+		84A292F41A36FC6800EF8787 /* [屌爆了].png in Resources */ = {isa = PBXBuildFile; fileRef = 84A292D11A36FC6800EF8787 /* [屌爆了].png */; };
+		84A292F51A36FC6800EF8787 /* [帅气].png in Resources */ = {isa = PBXBuildFile; fileRef = 84A292D21A36FC6800EF8787 /* [帅气].png */; };
+		84A292F61A36FC6800EF8787 /* [微笑].png in Resources */ = {isa = PBXBuildFile; fileRef = 84A292D31A36FC6800EF8787 /* [微笑].png */; };
+		84A292F71A36FC6800EF8787 /* [快哭了].png in Resources */ = {isa = PBXBuildFile; fileRef = 84A292D41A36FC6800EF8787 /* [快哭了].png */; };
+		84A292F81A36FC6800EF8787 /* [惊恐].png in Resources */ = {isa = PBXBuildFile; fileRef = 84A292D51A36FC6800EF8787 /* [惊恐].png */; };
+		84A292F91A36FC6800EF8787 /* [惊讶].png in Resources */ = {isa = PBXBuildFile; fileRef = 84A292D61A36FC6800EF8787 /* [惊讶].png */; };
+		84A292FA1A36FC6800EF8787 /* [愤怒].png in Resources */ = {isa = PBXBuildFile; fileRef = 84A292D71A36FC6800EF8787 /* [愤怒].png */; };
+		84A292FB1A36FC6800EF8787 /* [打死你].png in Resources */ = {isa = PBXBuildFile; fileRef = 84A292D81A36FC6800EF8787 /* [打死你].png */; };
+		84A292FC1A36FC6800EF8787 /* [抓狂].png in Resources */ = {isa = PBXBuildFile; fileRef = 84A292D91A36FC6800EF8787 /* [抓狂].png */; };
+		84A292FD1A36FC6800EF8787 /* [抱抱].png in Resources */ = {isa = PBXBuildFile; fileRef = 84A292DA1A36FC6800EF8787 /* [抱抱].png */; };
+		84A292FE1A36FC6800EF8787 /* [挖鼻孔].png in Resources */ = {isa = PBXBuildFile; fileRef = 84A292DB1A36FC6800EF8787 /* [挖鼻孔].png */; };
+		84A292FF1A36FC6800EF8787 /* [摸头].png in Resources */ = {isa = PBXBuildFile; fileRef = 84A292DC1A36FC6800EF8787 /* [摸头].png */; };
+		84A293001A36FC6800EF8787 /* [晕].png in Resources */ = {isa = PBXBuildFile; fileRef = 84A292DD1A36FC6800EF8787 /* [晕].png */; };
+		84A293011A36FC6800EF8787 /* [求你了].png in Resources */ = {isa = PBXBuildFile; fileRef = 84A292DE1A36FC6800EF8787 /* [求你了].png */; };
+		84A293021A36FC6800EF8787 /* [求包养].png in Resources */ = {isa = PBXBuildFile; fileRef = 84A292DF1A36FC6800EF8787 /* [求包养].png */; };
+		84A293031A36FC6800EF8787 /* [流汗].png in Resources */ = {isa = PBXBuildFile; fileRef = 84A292E01A36FC6800EF8787 /* [流汗].png */; };
+		84A293041A36FC6800EF8787 /* [淘气].png in Resources */ = {isa = PBXBuildFile; fileRef = 84A292E11A36FC6800EF8787 /* [淘气].png */; };
+		84A293051A36FC6800EF8787 /* [猥琐].png in Resources */ = {isa = PBXBuildFile; fileRef = 84A292E21A36FC6800EF8787 /* [猥琐].png */; };
+		84A293061A36FC6800EF8787 /* [生气].png in Resources */ = {isa = PBXBuildFile; fileRef = 84A292E31A36FC6800EF8787 /* [生气].png */; };
+		84A293071A36FC6800EF8787 /* [白眼].png in Resources */ = {isa = PBXBuildFile; fileRef = 84A292E41A36FC6800EF8787 /* [白眼].png */; };
+		84A293081A36FC6800EF8787 /* [给跪].png in Resources */ = {isa = PBXBuildFile; fileRef = 84A292E51A36FC6800EF8787 /* [给跪].png */; };
+		84A293091A36FC6800EF8787 /* [鄙视].png in Resources */ = {isa = PBXBuildFile; fileRef = 84A292E61A36FC6800EF8787 /* [鄙视].png */; };
+		84A2930A1A36FC6800EF8787 /* [闭嘴].png in Resources */ = {isa = PBXBuildFile; fileRef = 84A292E71A36FC6800EF8787 /* [闭嘴].png */; };
+		84A2930B1A36FC6800EF8787 /* [阴险].png in Resources */ = {isa = PBXBuildFile; fileRef = 84A292E81A36FC6800EF8787 /* [阴险].png */; };
+		84A2930C1A36FC6800EF8787 /* [难过].png in Resources */ = {isa = PBXBuildFile; fileRef = 84A292E91A36FC6800EF8787 /* [难过].png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84A292B01A36F5DD00EF8787 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84A2928E1A36F5DC00EF8787 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84A292951A36F5DC00EF8787;
+			remoteInfo = KZRickLabelDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		84A292961A36F5DC00EF8787 /* KZRickLabelDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KZRickLabelDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84A2929A1A36F5DC00EF8787 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84A2929B1A36F5DC00EF8787 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		84A2929D1A36F5DC00EF8787 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		84A2929E1A36F5DC00EF8787 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		84A292A01A36F5DC00EF8787 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		84A292A11A36F5DC00EF8787 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		84A292A41A36F5DC00EF8787 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84A292A61A36F5DC00EF8787 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		84A292A91A36F5DC00EF8787 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		84A292AF1A36F5DD00EF8787 /* KZRickLabelDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KZRickLabelDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84A292B41A36F5DD00EF8787 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84A292B51A36F5DD00EF8787 /* KZRickLabelDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KZRickLabelDemoTests.m; sourceTree = "<group>"; };
+		84A292C01A36F65200EF8787 /* KZLinkLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KZLinkLabel.h; sourceTree = "<group>"; };
+		84A292C11A36F65200EF8787 /* KZLinkLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KZLinkLabel.m; sourceTree = "<group>"; };
+		84A292C21A36F65200EF8787 /* NSAttributedString+Emotion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+Emotion.h"; sourceTree = "<group>"; };
+		84A292C31A36F65200EF8787 /* NSAttributedString+Emotion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+Emotion.m"; sourceTree = "<group>"; };
+		84A292C71A36FC6800EF8787 /* [不服].png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "[不服].png"; sourceTree = "<group>"; };
+		84A292C81A36FC6800EF8787 /* [亲亲].png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "[亲亲].png"; sourceTree = "<group>"; };
+		84A292C91A36FC6800EF8787 /* [偷笑].png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "[偷笑].png"; sourceTree = "<group>"; };
+		84A292CA1A36FC6800EF8787 /* [加油].png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "[加油].png"; sourceTree = "<group>"; };
+		84A292CB1A36FC6800EF8787 /* [卖萌].png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "[卖萌].png"; sourceTree = "<group>"; };
+		84A292CC1A36FC6800EF8787 /* [吐了].png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "[吐了].png"; sourceTree = "<group>"; };
+		84A292CD1A36FC6800EF8787 /* [大哭].png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "[大哭].png"; sourceTree = "<group>"; };
+		84A292CE1A36FC6800EF8787 /* [大笑].png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "[大笑].png"; sourceTree = "<group>"; };
+		84A292CF1A36FC6800EF8787 /* [好色].png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "[好色].png"; sourceTree = "<group>"; };
+		84A292D01A36FC6800EF8787 /* [害羞].png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "[害羞].png"; sourceTree = "<group>"; };
+		84A292D11A36FC6800EF8787 /* [屌爆了].png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "[屌爆了].png"; sourceTree = "<group>"; };
+		84A292D21A36FC6800EF8787 /* [帅气].png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "[帅气].png"; sourceTree = "<group>"; };
+		84A292D31A36FC6800EF8787 /* [微笑].png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "[微笑].png"; sourceTree = "<group>"; };
+		84A292D41A36FC6800EF8787 /* [快哭了].png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "[快哭了].png"; sourceTree = "<group>"; };
+		84A292D51A36FC6800EF8787 /* [惊恐].png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "[惊恐].png"; sourceTree = "<group>"; };
+		84A292D61A36FC6800EF8787 /* [惊讶].png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "[惊讶].png"; sourceTree = "<group>"; };
+		84A292D71A36FC6800EF8787 /* [愤怒].png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "[愤怒].png"; sourceTree = "<group>"; };
+		84A292D81A36FC6800EF8787 /* [打死你].png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "[打死你].png"; sourceTree = "<group>"; };
+		84A292D91A36FC6800EF8787 /* [抓狂].png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "[抓狂].png"; sourceTree = "<group>"; };
+		84A292DA1A36FC6800EF8787 /* [抱抱].png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "[抱抱].png"; sourceTree = "<group>"; };
+		84A292DB1A36FC6800EF8787 /* [挖鼻孔].png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "[挖鼻孔].png"; sourceTree = "<group>"; };
+		84A292DC1A36FC6800EF8787 /* [摸头].png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "[摸头].png"; sourceTree = "<group>"; };
+		84A292DD1A36FC6800EF8787 /* [晕].png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "[晕].png"; sourceTree = "<group>"; };
+		84A292DE1A36FC6800EF8787 /* [求你了].png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "[求你了].png"; sourceTree = "<group>"; };
+		84A292DF1A36FC6800EF8787 /* [求包养].png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "[求包养].png"; sourceTree = "<group>"; };
+		84A292E01A36FC6800EF8787 /* [流汗].png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "[流汗].png"; sourceTree = "<group>"; };
+		84A292E11A36FC6800EF8787 /* [淘气].png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "[淘气].png"; sourceTree = "<group>"; };
+		84A292E21A36FC6800EF8787 /* [猥琐].png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "[猥琐].png"; sourceTree = "<group>"; };
+		84A292E31A36FC6800EF8787 /* [生气].png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "[生气].png"; sourceTree = "<group>"; };
+		84A292E41A36FC6800EF8787 /* [白眼].png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "[白眼].png"; sourceTree = "<group>"; };
+		84A292E51A36FC6800EF8787 /* [给跪].png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "[给跪].png"; sourceTree = "<group>"; };
+		84A292E61A36FC6800EF8787 /* [鄙视].png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "[鄙视].png"; sourceTree = "<group>"; };
+		84A292E71A36FC6800EF8787 /* [闭嘴].png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "[闭嘴].png"; sourceTree = "<group>"; };
+		84A292E81A36FC6800EF8787 /* [阴险].png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "[阴险].png"; sourceTree = "<group>"; };
+		84A292E91A36FC6800EF8787 /* [难过].png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "[难过].png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84A292931A36F5DC00EF8787 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84A292AC1A36F5DD00EF8787 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84A2928D1A36F5DC00EF8787 = {
+			isa = PBXGroup;
+			children = (
+				84A292981A36F5DC00EF8787 /* KZRickLabelDemo */,
+				84A292B21A36F5DD00EF8787 /* KZRickLabelDemoTests */,
+				84A292971A36F5DC00EF8787 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84A292971A36F5DC00EF8787 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84A292961A36F5DC00EF8787 /* KZRickLabelDemo.app */,
+				84A292AF1A36F5DD00EF8787 /* KZRickLabelDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84A292981A36F5DC00EF8787 /* KZRickLabelDemo */ = {
+			isa = PBXGroup;
+			children = (
+				84A292BF1A36F62500EF8787 /* KZRickLabel */,
+				84A2929D1A36F5DC00EF8787 /* AppDelegate.h */,
+				84A2929E1A36F5DC00EF8787 /* AppDelegate.m */,
+				84A292A01A36F5DC00EF8787 /* ViewController.h */,
+				84A292A11A36F5DC00EF8787 /* ViewController.m */,
+				84A292A31A36F5DC00EF8787 /* Main.storyboard */,
+				84A292A61A36F5DC00EF8787 /* Images.xcassets */,
+				84A292A81A36F5DC00EF8787 /* LaunchScreen.xib */,
+				84A292991A36F5DC00EF8787 /* Supporting Files */,
+			);
+			path = KZRickLabelDemo;
+			sourceTree = "<group>";
+		};
+		84A292991A36F5DC00EF8787 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84A2929A1A36F5DC00EF8787 /* Info.plist */,
+				84A2929B1A36F5DC00EF8787 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84A292B21A36F5DD00EF8787 /* KZRickLabelDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				84A292B51A36F5DD00EF8787 /* KZRickLabelDemoTests.m */,
+				84A292B31A36F5DD00EF8787 /* Supporting Files */,
+			);
+			path = KZRickLabelDemoTests;
+			sourceTree = "<group>";
+		};
+		84A292B31A36F5DD00EF8787 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84A292B41A36F5DD00EF8787 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84A292BF1A36F62500EF8787 /* KZRickLabel */ = {
+			isa = PBXGroup;
+			children = (
+				84A292C61A36FC6800EF8787 /* Emoji */,
+				84A292C01A36F65200EF8787 /* KZLinkLabel.h */,
+				84A292C11A36F65200EF8787 /* KZLinkLabel.m */,
+				84A292C21A36F65200EF8787 /* NSAttributedString+Emotion.h */,
+				84A292C31A36F65200EF8787 /* NSAttributedString+Emotion.m */,
+			);
+			name = KZRickLabel;
+			sourceTree = "<group>";
+		};
+		84A292C61A36FC6800EF8787 /* Emoji */ = {
+			isa = PBXGroup;
+			children = (
+				84A292C71A36FC6800EF8787 /* [不服].png */,
+				84A292C81A36FC6800EF8787 /* [亲亲].png */,
+				84A292C91A36FC6800EF8787 /* [偷笑].png */,
+				84A292CA1A36FC6800EF8787 /* [加油].png */,
+				84A292CB1A36FC6800EF8787 /* [卖萌].png */,
+				84A292CC1A36FC6800EF8787 /* [吐了].png */,
+				84A292CD1A36FC6800EF8787 /* [大哭].png */,
+				84A292CE1A36FC6800EF8787 /* [大笑].png */,
+				84A292CF1A36FC6800EF8787 /* [好色].png */,
+				84A292D01A36FC6800EF8787 /* [害羞].png */,
+				84A292D11A36FC6800EF8787 /* [屌爆了].png */,
+				84A292D21A36FC6800EF8787 /* [帅气].png */,
+				84A292D31A36FC6800EF8787 /* [微笑].png */,
+				84A292D41A36FC6800EF8787 /* [快哭了].png */,
+				84A292D51A36FC6800EF8787 /* [惊恐].png */,
+				84A292D61A36FC6800EF8787 /* [惊讶].png */,
+				84A292D71A36FC6800EF8787 /* [愤怒].png */,
+				84A292D81A36FC6800EF8787 /* [打死你].png */,
+				84A292D91A36FC6800EF8787 /* [抓狂].png */,
+				84A292DA1A36FC6800EF8787 /* [抱抱].png */,
+				84A292DB1A36FC6800EF8787 /* [挖鼻孔].png */,
+				84A292DC1A36FC6800EF8787 /* [摸头].png */,
+				84A292DD1A36FC6800EF8787 /* [晕].png */,
+				84A292DE1A36FC6800EF8787 /* [求你了].png */,
+				84A292DF1A36FC6800EF8787 /* [求包养].png */,
+				84A292E01A36FC6800EF8787 /* [流汗].png */,
+				84A292E11A36FC6800EF8787 /* [淘气].png */,
+				84A292E21A36FC6800EF8787 /* [猥琐].png */,
+				84A292E31A36FC6800EF8787 /* [生气].png */,
+				84A292E41A36FC6800EF8787 /* [白眼].png */,
+				84A292E51A36FC6800EF8787 /* [给跪].png */,
+				84A292E61A36FC6800EF8787 /* [鄙视].png */,
+				84A292E71A36FC6800EF8787 /* [闭嘴].png */,
+				84A292E81A36FC6800EF8787 /* [阴险].png */,
+				84A292E91A36FC6800EF8787 /* [难过].png */,
+			);
+			path = Emoji;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84A292951A36F5DC00EF8787 /* KZRickLabelDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84A292B91A36F5DD00EF8787 /* Build configuration list for PBXNativeTarget "KZRickLabelDemo" */;
+			buildPhases = (
+				84A292921A36F5DC00EF8787 /* Sources */,
+				84A292931A36F5DC00EF8787 /* Frameworks */,
+				84A292941A36F5DC00EF8787 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KZRickLabelDemo;
+			productName = KZRickLabelDemo;
+			productReference = 84A292961A36F5DC00EF8787 /* KZRickLabelDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84A292AE1A36F5DD00EF8787 /* KZRickLabelDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84A292BC1A36F5DD00EF8787 /* Build configuration list for PBXNativeTarget "KZRickLabelDemoTests" */;
+			buildPhases = (
+				84A292AB1A36F5DD00EF8787 /* Sources */,
+				84A292AC1A36F5DD00EF8787 /* Frameworks */,
+				84A292AD1A36F5DD00EF8787 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84A292B11A36F5DD00EF8787 /* PBXTargetDependency */,
+			);
+			name = KZRickLabelDemoTests;
+			productName = KZRickLabelDemoTests;
+			productReference = 84A292AF1A36F5DD00EF8787 /* KZRickLabelDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84A2928E1A36F5DC00EF8787 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				TargetAttributes = {
+					84A292951A36F5DC00EF8787 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					84A292AE1A36F5DD00EF8787 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 84A292951A36F5DC00EF8787;
+					};
+				};
+			};
+			buildConfigurationList = 84A292911A36F5DC00EF8787 /* Build configuration list for PBXProject "KZRickLabelDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84A2928D1A36F5DC00EF8787;
+			productRefGroup = 84A292971A36F5DC00EF8787 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84A292951A36F5DC00EF8787 /* KZRickLabelDemo */,
+				84A292AE1A36F5DD00EF8787 /* KZRickLabelDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84A292941A36F5DC00EF8787 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84A292ED1A36FC6800EF8787 /* [加油].png in Resources */,
+				84A293071A36FC6800EF8787 /* [白眼].png in Resources */,
+				84A293081A36FC6800EF8787 /* [给跪].png in Resources */,
+				84A292EB1A36FC6800EF8787 /* [亲亲].png in Resources */,
+				84A292FB1A36FC6800EF8787 /* [打死你].png in Resources */,
+				84A292F61A36FC6800EF8787 /* [微笑].png in Resources */,
+				84A292EC1A36FC6800EF8787 /* [偷笑].png in Resources */,
+				84A293031A36FC6800EF8787 /* [流汗].png in Resources */,
+				84A293061A36FC6800EF8787 /* [生气].png in Resources */,
+				84A292FF1A36FC6800EF8787 /* [摸头].png in Resources */,
+				84A292A51A36F5DC00EF8787 /* Main.storyboard in Resources */,
+				84A292FD1A36FC6800EF8787 /* [抱抱].png in Resources */,
+				84A292FA1A36FC6800EF8787 /* [愤怒].png in Resources */,
+				84A292EF1A36FC6800EF8787 /* [吐了].png in Resources */,
+				84A293021A36FC6800EF8787 /* [求包养].png in Resources */,
+				84A2930B1A36FC6800EF8787 /* [阴险].png in Resources */,
+				84A2930C1A36FC6800EF8787 /* [难过].png in Resources */,
+				84A292FE1A36FC6800EF8787 /* [挖鼻孔].png in Resources */,
+				84A292F01A36FC6800EF8787 /* [大哭].png in Resources */,
+				84A293051A36FC6800EF8787 /* [猥琐].png in Resources */,
+				84A293011A36FC6800EF8787 /* [求你了].png in Resources */,
+				84A293091A36FC6800EF8787 /* [鄙视].png in Resources */,
+				84A292F41A36FC6800EF8787 /* [屌爆了].png in Resources */,
+				84A292F31A36FC6800EF8787 /* [害羞].png in Resources */,
+				84A292EA1A36FC6800EF8787 /* [不服].png in Resources */,
+				84A293001A36FC6800EF8787 /* [晕].png in Resources */,
+				84A2930A1A36FC6800EF8787 /* [闭嘴].png in Resources */,
+				84A292FC1A36FC6800EF8787 /* [抓狂].png in Resources */,
+				84A292F71A36FC6800EF8787 /* [快哭了].png in Resources */,
+				84A292EE1A36FC6800EF8787 /* [卖萌].png in Resources */,
+				84A292F51A36FC6800EF8787 /* [帅气].png in Resources */,
+				84A292F81A36FC6800EF8787 /* [惊恐].png in Resources */,
+				84A292F91A36FC6800EF8787 /* [惊讶].png in Resources */,
+				84A293041A36FC6800EF8787 /* [淘气].png in Resources */,
+				84A292F11A36FC6800EF8787 /* [大笑].png in Resources */,
+				84A292AA1A36F5DC00EF8787 /* LaunchScreen.xib in Resources */,
+				84A292F21A36FC6800EF8787 /* [好色].png in Resources */,
+				84A292A71A36F5DC00EF8787 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84A292AD1A36F5DD00EF8787 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84A292921A36F5DC00EF8787 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84A292A21A36F5DC00EF8787 /* ViewController.m in Sources */,
+				84A2929F1A36F5DC00EF8787 /* AppDelegate.m in Sources */,
+				84A2929C1A36F5DC00EF8787 /* main.m in Sources */,
+				84A292C41A36F65200EF8787 /* KZLinkLabel.m in Sources */,
+				84A292C51A36F65200EF8787 /* NSAttributedString+Emotion.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84A292AB1A36F5DD00EF8787 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84A292B61A36F5DD00EF8787 /* KZRickLabelDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84A292B11A36F5DD00EF8787 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84A292951A36F5DC00EF8787 /* KZRickLabelDemo */;
+			targetProxy = 84A292B01A36F5DD00EF8787 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		84A292A31A36F5DC00EF8787 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84A292A41A36F5DC00EF8787 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		84A292A81A36F5DC00EF8787 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84A292A91A36F5DC00EF8787 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84A292B71A36F5DD00EF8787 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		84A292B81A36F5DD00EF8787 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84A292BA1A36F5DD00EF8787 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KZRickLabelDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		84A292BB1A36F5DD00EF8787 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KZRickLabelDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		84A292BD1A36F5DD00EF8787 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KZRickLabelDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KZRickLabelDemo.app/KZRickLabelDemo";
+			};
+			name = Debug;
+		};
+		84A292BE1A36F5DD00EF8787 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KZRickLabelDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KZRickLabelDemo.app/KZRickLabelDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84A292911A36F5DC00EF8787 /* Build configuration list for PBXProject "KZRickLabelDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84A292B71A36F5DD00EF8787 /* Debug */,
+				84A292B81A36F5DD00EF8787 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84A292B91A36F5DD00EF8787 /* Build configuration list for PBXNativeTarget "KZRickLabelDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84A292BA1A36F5DD00EF8787 /* Debug */,
+				84A292BB1A36F5DD00EF8787 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84A292BC1A36F5DD00EF8787 /* Build configuration list for PBXNativeTarget "KZRickLabelDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84A292BD1A36F5DD00EF8787 /* Debug */,
+				84A292BE1A36F5DD00EF8787 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84A2928E1A36F5DC00EF8787 /* Project object */;
+}
