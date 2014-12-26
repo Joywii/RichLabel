@@ -284,7 +284,7 @@
 - (NSDictionary *)attributesFromProperties
 {
     //阴影属性
-    NSShadow *shadow = shadow = [[NSShadow alloc] init];
+    NSShadow *shadow = [[NSShadow alloc] init];
     if (self.shadowColor){
         shadow.shadowColor = self.shadowColor;
         shadow.shadowOffset = self.shadowOffset;
