@@ -85,7 +85,7 @@ class KZLinkLabel: UILabel , NSLayoutManagerDelegate
         willSet {
             if (self.selectedRange?.length > 0 && !NSEqualRanges(self.selectedRange!,newValue!)) {
                 self.textStorage.removeAttribute(NSBackgroundColorAttributeName, range: self.selectedRange!)
-                self.textStorage.removeAttribute(NSForegroundColorAttributeName, range: self.selectedRange!)
+                self.textStorage.addAttribute(NSForegroundColorAttributeName, value: self.linkColor!, range: self.selectedRange!)
             }
             if (newValue?.length > 0) {
                 self.textStorage.addAttribute(NSBackgroundColorAttributeName, value: self.linkBackgroundColor!, range: newValue!)
@@ -201,8 +201,8 @@ class KZLinkLabel: UILabel , NSLayoutManagerDelegate
         var glyphRange = self.layoutManager.glyphRangeForTextContainer(self.textContainer)
         textOffset = self.calcTextOffsetForGlyphRange(glyphRange)
         
-        location.x = textOffset.x
-        location.y = textOffset.y
+        location.x -= textOffset.x
+        location.y -= textOffset.y
         
         var touchedChar:Int = self.layoutManager.glyphIndexForPoint(location, inTextContainer: self.textContainer)
         
@@ -367,7 +367,7 @@ class KZLinkLabel: UILabel , NSLayoutManagerDelegate
             
             var dictionary:Dictionary<String, AnyObject> = [
                 "linkType" : NSNumber(unsignedLong: KZLinkType.UserHandle.rawValue),
-                "range"    : NSValue(nonretainedObject : matchRange),
+                "range"    : NSValue(range : matchRange),
                 "link"     : matchString
             ];
             rangesForUserHandles.addObject(dictionary)
@@ -388,7 +388,7 @@ class KZLinkLabel: UILabel , NSLayoutManagerDelegate
             
             var dictionary:Dictionary<String, AnyObject> = [
                 "linkType" : NSNumber(unsignedLong: KZLinkType.HashTag.rawValue),
-                "range"    : NSValue(nonretainedObject : matchRange),
+                "range"    : NSValue(range: matchRange),
                 "link"     : matchString
             ];
             rangesForHashTags.addObject(dictionary)
@@ -416,7 +416,7 @@ class KZLinkLabel: UILabel , NSLayoutManagerDelegate
                 
                 var dictionary:Dictionary<String, AnyObject> = [
                     "linkType" : NSNumber(unsignedLong: KZLinkType.URL.rawValue),
-                    "range"    : NSValue(nonretainedObject : matchRange),
+                    "range"    : NSValue(range : matchRange),
                     "link"     : realURL!
                 ];
                 rangesForURLs.addObject(dictionary)
@@ -440,7 +440,7 @@ class KZLinkLabel: UILabel , NSLayoutManagerDelegate
             
             var dictionary:Dictionary<String, AnyObject> = [
                 "linkType" : NSNumber(unsignedLong: KZLinkType.PhoneNumber.rawValue),
-                "range"    : NSValue(nonretainedObject : matchRange),
+                "range"    : NSValue(range : matchRange),
                 "link"     : matchString
             ];
             rangesForPhoneNumbers.addObject(dictionary)
@@ -515,7 +515,7 @@ class KZLinkLabel: UILabel , NSLayoutManagerDelegate
             return
         }
         var location:CGPoint = recognizer.locationInView(self)
-        var touchedLink:Dictionary<String, AnyObject>? = self.getLinkAtLocation(location)!
+        var touchedLink:Dictionary<String, AnyObject>? = self.getLinkAtLocation(location)
         
         if (touchedLink != nil) {
             //range
@@ -538,7 +538,7 @@ class KZLinkLabel: UILabel , NSLayoutManagerDelegate
     override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
         self.isTouchMoved = false
         var touchLocation:CGPoint = touches.anyObject()!.locationInView(self)
-        var touchedLink:Dictionary<String, AnyObject>? = self.getLinkAtLocation(touchLocation)!
+        var touchedLink:Dictionary<String, AnyObject>? = self.getLinkAtLocation(touchLocation)
         if (touchedLink != nil) {
             var rangeValue:NSValue = touchedLink!["range"] as NSValue
             var range:NSRange = rangeValue.rangeValue
@@ -558,7 +558,7 @@ class KZLinkLabel: UILabel , NSLayoutManagerDelegate
             return
         }
         var touchLocation:CGPoint = touches.anyObject()!.locationInView(self)
-        var touchedLink:Dictionary<String, AnyObject>? = self.getLinkAtLocation(touchLocation)!
+        var touchedLink:Dictionary<String, AnyObject>? = self.getLinkAtLocation(touchLocation)
         
         if (touchedLink != nil) {
             //range

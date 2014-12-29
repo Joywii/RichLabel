@@ -12,7 +12,7 @@ class KZTextAttachment : NSTextAttachment {
     var range:NSRange = NSMakeRange(0, 0)
     
     override init(data contentData: NSData?, ofType uti: String?) {
-        super.init(data: contentData!, ofType: uti!)
+        super.init(data: contentData, ofType: uti)
     }
 
     required init(coder aDecoder: NSCoder) {
@@ -87,26 +87,29 @@ extension NSAttributedString
         for var i = 0; i < string.length; ++i {
             var s:NSString = string.substringWithRange(NSMakeRange(i, 1))
             if (s.isEqualToString(markL) || (stack.count > 0 && stack[0].isEqualToString(markL))) {
-                stack.removeAllObjects()
-            }
-            stack.addObject(s)
-            if (s.isEqualToString(markR) || (i == string.length - 1)) {
-                var emojiStr:NSMutableString = NSMutableString()
-                for c in stack {
-                    emojiStr.appendString(c as NSString)
+                if (s.isEqualToString(markL) && (stack.count > 0 && stack[0].isEqualToString(markL))) {
+                    stack.removeAllObjects()
                 }
-                if (NSAttributedString.emojiStringArray().containsObject(emojiStr)) {
-                    var range:NSRange = NSMakeRange(i + 1 - emojiStr.length, emojiStr.length)
-                    attributedString.replaceCharactersInRange(range, withString: " ")
-                    var attachment:KZTextAttachment = KZTextAttachment(data: nil, ofType: nil)
-                    attachment.range = NSMakeRange(i + 1 - emojiStr.length, 1)
-                    attachment.image = UIImage(named: "\(emojiStr).png")
-                    
-                    i -= (stack.count - 1)
-                    array.addObject(attachment)
+                stack.addObject(s)
+                if (s.isEqualToString(markR) || (i == string.length - 1)) {
+                    var emojiStr:NSMutableString = NSMutableString()
+                    for c in stack {
+                        emojiStr.appendString(c as NSString)
+                    }
+                    if (NSAttributedString.emojiStringArray().containsObject(emojiStr)) {
+                        var range:NSRange = NSMakeRange(i + 1 - emojiStr.length, emojiStr.length)
+                        attributedString.replaceCharactersInRange(range, withString: " ")
+                        var attachment:KZTextAttachment = KZTextAttachment(data: nil, ofType: nil)
+                        attachment.range = NSMakeRange(i + 1 - emojiStr.length, 1)
+                        attachment.image = UIImage(named: "\(emojiStr).png")
+                        
+                        i -= (stack.count - 1)
+                        array.addObject(attachment)
+                    }
+                    stack.removeAllObjects()
                 }
-                stack.removeAllObjects()
             }
+            string = attributedString.string
         }
         return array
     }
