@@ -33,13 +33,14 @@
     
     KZLinkLabel *kzLabel = [[KZLinkLabel alloc] initWithFrame:CGRectMake(15, 40, kScreenWidth - 30, attributeRect.size.height)];
     kzLabel.automaticLinkDetectionEnabled = YES;
-    kzLabel.font = [UIFont systemFontOfSize:17];
+    kzLabel.font = [UIFont systemFontOfSize:16];
     kzLabel.backgroundColor = [UIColor clearColor];
     kzLabel.textColor = [UIColor blackColor];
     kzLabel.numberOfLines = 0;
     kzLabel.lineBreakMode = NSLineBreakByTruncatingTail;
     kzLabel.attributedText = attributedString;
     
+    [kzLabel sizeToFit];
     kzLabel.linkColor = [UIColor blueColor];
     kzLabel.linkHighlightColor = [UIColor orangeColor];
     

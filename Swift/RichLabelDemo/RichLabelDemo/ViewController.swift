@@ -39,6 +39,7 @@ class ViewController: UIViewController ,UIActionSheetDelegate {
         kzLabel.lineBreakMode = NSLineBreakMode.ByTruncatingTail
         kzLabel.attributedText = attributedString
         
+        kzLabel.sizeToFit()
         kzLabel.linkColor = UIColor.blueColor()
         kzLabel.linkHightlightColor = UIColor.orangeColor()
         

@@ -132,7 +132,9 @@ class KZLinkLabel: UILabel , NSLayoutManagerDelegate
         }
         set {
             super.attributedText = newValue
-            self.updateTextStoreWithAttributedString(newValue!)
+            var mutableAttributeString:NSMutableAttributedString = NSMutableAttributedString(attributedString: newValue!)
+            mutableAttributeString.addAttributes(self.attributesFromProperties(), range: NSMakeRange(0, mutableAttributeString.length))
+            self.updateTextStoreWithAttributedString(mutableAttributeString)
         }
     }
     override func layoutSubviews() {
@@ -154,8 +156,8 @@ class KZLinkLabel: UILabel , NSLayoutManagerDelegate
     {
         self.textContainer = NSTextContainer()
         self.textContainer.lineFragmentPadding = 0
-        self.textContainer.maximumNumberOfLines = self.numberOfLines
-        self.textContainer.lineBreakMode = self.lineBreakMode
+        self.textContainer.maximumNumberOfLines = 0//self.numberOfLines
+        self.textContainer.lineBreakMode = .ByTruncatingTail//self.lineBreakMode
         self.textContainer.size = self.frame.size
         
         self.layoutManager = NSLayoutManager()
@@ -224,7 +226,9 @@ class KZLinkLabel: UILabel , NSLayoutManagerDelegate
     func updateTextStoreWithText()
     {
         if (self.attributedText != nil) {
-            self.updateTextStoreWithAttributedString(self.attributedText!)
+            var mutableAttributeString:NSMutableAttributedString = NSMutableAttributedString(attributedString: self.attributedText!)
+            mutableAttributeString.addAttributes(self.attributesFromProperties(), range: NSMakeRange(0, mutableAttributeString.length))
+            self.updateTextStoreWithAttributedString(mutableAttributeString)
         } else if (self.text != nil) {
             var attributeText:NSAttributedString = NSAttributedString(string: self.text!, attributes: self.attributesFromProperties())
             self.updateTextStoreWithAttributedString(attributeText)

@@ -13,7 +13,7 @@
 - (CGRect)attachmentBoundsForTextContainer:(NSTextContainer *)textContainer proposedLineFragment:(CGRect)lineFrag glyphPosition:(CGPoint)position characterIndex:(NSUInteger)charIndex
 {
     //return CGRectMake( 0 , 0 , lineFrag.size.height + 6, lineFrag.size.height + 6);
-    return CGRectMake( 0 , -5, 19, 20);
+    return CGRectMake( 0 , -5, 20, 20);
 }
 @end
 
@@ -25,7 +25,7 @@
  */
 - (CGRect)boundsWithSize:(CGSize)size
 {
-    CGRect contentRect = [self boundingRectWithSize:size options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading context:nil];
+    CGRect contentRect = [self boundingRectWithSize:size options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading context:nil];//NSStringDrawingUsesLineFragmentOrigin
     return contentRect;
 }
 
@@ -44,7 +44,7 @@
 + (CGRect)boundsForString:(NSString *)string size:(CGSize)size attributes:(NSDictionary *)attrs
 {
     NSAttributedString *attributedString = [NSAttributedString emotionAttributedStringFrom:string attributes:attrs];
-    CGRect contentRect = [attributedString boundingRectWithSize:size options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading context:nil];
+    CGRect contentRect = [attributedString boundingRectWithSize:size options: NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading context:nil];
     return contentRect;
 }
 

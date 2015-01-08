@@ -71,7 +71,9 @@
 - (void)setAttributedText:(NSAttributedString *)attributedText
 {
     [super setAttributedText:attributedText];
-    [self updateTextStoreWithAttributedString:attributedText];
+    NSMutableAttributedString *mutableAttributeString = [[NSMutableAttributedString alloc] initWithAttributedString:attributedText];
+    [mutableAttributeString addAttributes:[self attributesFromProperties] range:NSMakeRange(0, mutableAttributeString.length)];
+    [self updateTextStoreWithAttributedString:mutableAttributeString];
 }
 - (void)layoutSubviews
 {
@@ -82,8 +84,8 @@
 {
     self.textContainer = [[NSTextContainer alloc] init];
     self.textContainer.lineFragmentPadding = 0;
-    self.textContainer.maximumNumberOfLines = self.numberOfLines;
-    self.textContainer.lineBreakMode = self.lineBreakMode;
+    self.textContainer.maximumNumberOfLines = 0;//self.numberOfLines;
+    self.textContainer.lineBreakMode = NSLineBreakByTruncatingTail;//self.lineBreakMode;
     self.textContainer.size = self.frame.size;
     
     self.layoutManager = [[NSLayoutManager alloc] init];
@@ -216,7 +218,9 @@
 {
     if (self.attributedText)
     {
-        [self updateTextStoreWithAttributedString:self.attributedText];
+        NSMutableAttributedString *mutableAttributeString = [[NSMutableAttributedString alloc] initWithAttributedString:self.attributedText];
+        [mutableAttributeString addAttributes:[self attributesFromProperties] range:NSMakeRange(0, mutableAttributeString.length)];
+        [self updateTextStoreWithAttributedString:mutableAttributeString];
     }
     else if (self.text)
     {
